@@ -11,8 +11,8 @@ current_time = date.toISOString();
 // test route
 const name = 'Eweleye olamide';
 const myTrack = 'Backend';
-file_url = "https://github.com/username/repo/blob/main/file_name.ext"
-repo_url =  "https://github.com/username/repo",
+file_url = "https://github.com/olasmart18/zuri_HNGx-stage1/blob/main/server.js"
+repo_url =  "https://github.com/olasmart18/zuri_HNGx-stage1",
 
 app.get('/api', (req, res) => {
     const  { slack_name, track } = req.query
