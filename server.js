@@ -5,10 +5,10 @@ app.use(express.json());
 
 // GET route to acceept query
 app.get('/api', (req, res) => {
-    let days = ['sunday', 'monday', 'tuesday', 'wednessday', 'thursday', 'friday', 'saturday']
+    let days = ['sunday', 'Monday', 'Tuesday', 'Wednessday', 'Thursday', 'Friday', 'Saturday']
     const date = new Date()
     const currentDay = days[date.getDay()];
-    current_time = date.toISOString();
+    current_time = date.toISOString().split('.')[0] + 'Z';
     const name = 'Eweleye olamide';
     const myTrack = 'Backend';
     file_url = "https://github.com/olasmart18/zuri_HNGx-stage1/blob/main/server.js";
