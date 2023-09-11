@@ -18,10 +18,10 @@ app.get('/api', (req, res) => {
     const  { slack_name, track } = req.query
     res.status(200).json({
         data: {
-            slack_name: slack_name && name,
+            slack_name: slack_name,
             current_day: currentDay,
             utc_time: current_time,
-            track: track && myTrack,
+            track: track.toLowerCase(),
             github_file_url: file_url,
             github_repo_url: repo_url,
             status_code: 200,
@@ -29,4 +29,4 @@ app.get('/api', (req, res) => {
     })
 })
 
-app.listen(3030, () => console.log('server running on port 3030'));
+app.listen(3000, () => console.log('server running on port 3030'));
