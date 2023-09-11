@@ -1,15 +1,5 @@
 const express = require('express');
 
-// {
-//     "slack_name": "example_name",
-//     "current_day": "Monday",
-//     "utc_time": "2023-08-21T15:04:05Z",
-//     "track": "backend",
-//     "github_file_url": ,
-//     "github_repo_url":
-//     "status_code": 200
-//   }
-
 const app = express();
 app.use(express.json());
 
