@@ -16,7 +16,6 @@ app.get('/api', (req, res) => {
 
     const  { slack_name, track } = req.query
     res.status(200).json({
-        data: {
             slack_name: slack_name && name,
             current_day: currentDay,
             utc_time: current_time,
@@ -24,7 +23,6 @@ app.get('/api', (req, res) => {
             github_file_url: file_url,
             github_repo_url: repo_url,
             status_code: 200,
-        } 
     })
 })
 
